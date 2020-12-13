@@ -16,12 +16,12 @@ type HawaianPizza struct {
 	base string
 }
 
-// Ingredients : Our cheese pizza has a type of cheese
+// Ingredients : Our meat pizza has a type of meat
 func (c MeatLoverPizza) Ingredients() {
 	fmt.Println("A pizza with " + c.meatType + " on a " + c.base + " base.")
 }
 
-// Ingredients : Our cheese pizza has a type of cheese
+// Ingredients : Our Hawaian pizza has Pineapple, of course
 func (h HawaianPizza) Ingredients() {
 	fmt.Println("A pizza with Pineapple on a " + h.base + " base.")
 }
