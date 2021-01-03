@@ -1,2 +1,2 @@
-# go-projects
+# My Go Sandbox
 My experiments with Golang
