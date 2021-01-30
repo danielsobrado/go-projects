@@ -10,7 +10,7 @@ import (
 type MyHandler struct{}
 
 func (h *MyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello World!")
+	fmt.Fprintf(w, "Hello secure World!")
 }
 
 func main() {
@@ -23,5 +23,5 @@ func main() {
 	}
 
 	http2.ConfigureServer(&server, &http2.Server{})
-	server.ListenAndServeTLS("cert.pem", "key.pem")
+	server.ListenAndServeTLS("../certificate/cert.pem", "../certificate/key.pem")
 }
